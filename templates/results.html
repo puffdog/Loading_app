@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Results</title>
+</head>
+<body>
+    <h2>Calculation Results</h2>
+    <p>Cargo Name: {{ cargo_name }}</p>
+    <p>Total Volume: {{ total_volume }} cubic mm</p>
+    <p>Total Weight: {{ total_weight }} kg</p>
+
+    <form action="{{ url_for('export_results') }}" method="post">
+        <button type="submit">Export</button>
+    </form>
+</body>
+</html>

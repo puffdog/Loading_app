@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Cargo Type</title>
+</head>
+<body>
+    <h2>Select Cargo Type</h2>
+    <form action="{{ url_for('cargo_type') }}" method="post">
+        <input type="radio" id="boxes" name="cargoType" value="boxes">
+        <label for="boxes">Boxes</label><br>
+        <input type="radio" id="bigBags" name="cargoType" value="bigBags">
+        <label for="bigBags">Big Bags</label><br>
+        <input type="radio" id="barrels" name="cargoType" value="barrels">
+        <label for="barrels">Barrels</label><br>
+        <input type="radio" id="sacks" name="cargoType" value="sacks">
+        <label for="sacks">Sacks</label><br>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

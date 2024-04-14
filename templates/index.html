@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Calculator</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Load Calculator</h1>
+        <p>This application helps logistics professionals and individuals calculate and optimize the loading of cargo into containers or trucks.</p>
+    </header>
+
+    <section>
+        <h2>How It Works</h2>
+        <p>The Load Calculator allows you to:</p>
+        <ul>
+            <li>Select the type of equipment (Container or Truck).</li>
+            <li>Input dimensions and characteristics of your cargo.</li>
+            <li>Automatically calculate the best way to load your cargo.</li>
+            <li>Review and export the results for your records or further analysis.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Get Started</h2>
+        <form action="/select_equipment" method="post">
+            <fieldset>
+                <legend>Select Your Equipment Type</legend>
+                <input type="radio" id="container" name="equipmentType" value="container" required>
+                <label for="container">Container</label><br>
+                <input type="radio" id="truck" name="equipmentType" value="truck" required>
+                <label for="truck">Truck</label><br>
+                <button type="submit">Next</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>For support or to report issues, please contact us at support@loadcalculator.com.</p>
+    </footer>
+</body>
+</html>

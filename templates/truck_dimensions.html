@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Dimensions</title>
+</head>
+<body>
+    <h2>Enter Truck Dimensions</h2>
+    <form action="{{ url_for('truck_dimensions') }}" method="post">
+        <label for="truck_length">Length (mm):</label>
+        <input type="number" id="truck_length" name="truck_length"><br>
+        <label for="truck_width">Width (mm):</label>
+        <input type="number" id="truck_width" name="truck_width"><br>
+        <label for="truck_height">Height (mm):</label>
+        <input type="number" id="truck_height" name="truck_height"><br>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
